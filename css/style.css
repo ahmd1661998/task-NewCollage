@@ -20,128 +20,11 @@ a:hover {
 
 /* End body */
 /* FrameWorks */
-.main-header .navbar .navbar-brand, .main-header .navbar .navbar-nav li .btn-header, .main-header .navbar .menu-h, .head .title, footer a, footer a:hover {
+.main-header .navbar .navbar-brand, .main-header .navbar .navbar-nav li .btn-header, .main-header .navbar .menu-h, .head .title, footer a, footer a:hover, footer .right {
   color: #FFF; }
 
-/* Start Header */
-.main-header {
-  background-color: #000;
-  position: absolute;
-  min-width: 100%;
-  height: 100px;
-  z-index: 999; }
-  .main-header .navbar .navbar-brand {
-    font-family: 'Roboto Slab', serif; }
-    .main-header .navbar .navbar-brand .icon {
-      position: relative;
-      width: 70px;
-      height: 80px;
-      left: -20px; }
-    .main-header .navbar .navbar-brand p {
-      margin-top: -15px; }
-  .main-header .navbar .navbar-nav li {
-    margin-right: 1.25em; }
-    .main-header .navbar .navbar-nav li .btn-header {
-      border-radius: 0;
-      background-color: #d15414;
-      font-weight: bold;
-      font-size: 20px;
-      padding: 5px 20px; }
-      .main-header .navbar .navbar-nav li .btn-header:hover {
-        background-color: #747679; }
-  .main-header .navbar form .input {
-    border-radius: 0;
-    background-color: #DDD;
-    padding: 20px 10px; }
-  .main-header .navbar .menu-h {
-    font-size: 23px; }
-    .main-header .navbar .menu-h:hover {
-      background-color: #747679;
-      padding: .375rem .75rem; }
-
-.head {
-  height: 550px;
-  overflow: hidden; }
-  .head #myVideo {
-    right: 0;
-    bottom: 0;
-    min-width: 100%;
-    min-height: 100%;
-    position: relative;
-    z-index: -1; }
-  .head .title {
-    position: absolute;
-    top: 0;
-    text-align: center;
-    min-width: 100%;
-    padding-top: 19%; }
-    .head .title h2 {
-      font-weight: 600;
-      line-height: 1em;
-      font-size: 4.00em;
-      letter-spacing: 0.10em;
-      text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3); }
-
-.svgIcon {
-  margin: 50px auto; }
-  .svgIcon ul li {
-    border-right: 2px solid #F5F5F5;
-    width: 20%;
-    text-align: center; }
-    .svgIcon ul li .icon-svg {
-      background-color: #f5f5f5;
-      width: 100px;
-      height: 100px;
-      border-radius: 50px;
-      margin: 0 auto;
-      margin-bottom: 1.5em; }
-      .svgIcon ul li .icon-svg .icon {
-        width: 50%;
-        height: 90%;
-        margin: 0 auto; }
-    .svgIcon ul li .icon-caption {
-      font-size: 0.85em;
-      color: #000; }
-  .svgIcon ul li:last-child {
-    border: none; }
-
-/*Section nichols-about */
-.nichols-about {
-  background-color: #E5F0DD;
-  margin: 50px 0;
-  text-align: center;
-  padding: 50px 0; }
-  .nichols-about h3 {
-    color: #25408f;
-    font-size: 3.375rem;
-    font-weight: 500; }
-  .nichols-about p {
-    padding: .675em;
-    width: 65%;
-    margin: 0 auto;
-    font-size: 31px;
-    font-weight: 400; }
-  .nichols-about .btn {
-    border: 1px solid #000000;
-    padding: 10px 20px;
-    border-radius: 0;
-    margin-top: 15px; }
-    .nichols-about .btn a {
-      color: #000;
-      font-weight: bold;
-      font-weight: 600;
-      letter-spacing: 0.2em; }
-
-/*Section Card-group */
-.cards {
-  margin-bottom: 50px;
-  margin-top: 50px; }
-  .cards .card {
-    box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.3), 2px 4px 3px rgba(0, 0, 0, 0.3); }
-    .cards .card a {
-      color: #000000; }
-    .cards .card:hover {
-      box-shadow: none; }
+.main-header, .carousels .indicators .dots li, .carousels .indicators .dots li:hover, .carousels .indicators .dots li:active {
+  background-color: #000; }
 
 /* Carousel */
 .carousels {
@@ -167,21 +50,130 @@ a:hover {
       margin: 0 auto;
       position: relative; }
   .carousels .indicators .dots {
-    list-style: none;
     display: flex;
     justify-content: center;
     margin-top: 25px;
     cursor: pointer; }
     .carousels .indicators .dots li {
-      background-color: black;
       width: 10px;
       height: 10px;
       display: inline-block;
       border-radius: 100%;
       margin-left: 15px;
       background-color: #d1d1d1; }
-      .carousels .indicators .dots li:active, .carousels .indicators .dots li:hover {
-        background-color: black; }
+
+/* Start Header */
+.main-header {
+  min-width: 100%;
+  height: auto;
+  z-index: 999; }
+  .main-header .navbar .navbar-brand {
+    font-family: 'Roboto Slab', serif; }
+    .main-header .navbar .navbar-brand .icon {
+      width: 70px;
+      height: 80px;
+      left: -20px; }
+    .main-header .navbar .navbar-brand p {
+      margin-top: -15px;
+      visibility: hidden; }
+  .main-header .navbar .navbar-nav li {
+    margin-right: 1.25em; }
+    .main-header .navbar .navbar-nav li .btn-header {
+      border-radius: 0;
+      background-color: #d15414;
+      font-size: 20px;
+      padding: 5px 20px; }
+      .main-header .navbar .navbar-nav li .btn-header:hover {
+        background-color: #747679; }
+  .main-header .navbar form .input {
+    border-radius: 0;
+    background-color: #DDD;
+    padding: 20px 10px; }
+  .main-header .navbar .menu-h {
+    font-size: 40px; }
+    .main-header .navbar .menu-h:hover {
+      background-color: #747679;
+      padding: .375rem .75rem; }
+
+.head {
+  height: 550px;
+  background-image: url("../images/HomePage-1450x645-min.jpg");
+  background-repeat: no-repeat;
+  background-position: 48% 7%; }
+  .head #myVideo {
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1; }
+  .head .title {
+    top: 0;
+    min-width: 100%;
+    padding-top: 19%; }
+    .head .title h2 {
+      font-weight: 600;
+      line-height: 1em;
+      font-size: 4.00em;
+      letter-spacing: 0.10em;
+      text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3); }
+
+.svgIcon {
+  margin: 50px auto; }
+  .svgIcon ul li {
+    border-right: 2px solid #F5F5F5;
+    width: 20%; }
+    .svgIcon ul li .icon-svg {
+      background-color: #f5f5f5;
+      width: 100px;
+      height: 100px;
+      border-radius: 50px;
+      margin: 0 auto;
+      margin-bottom: 1.5em; }
+      .svgIcon ul li .icon-svg .icon {
+        width: 50%;
+        height: 90%;
+        margin: 0 auto; }
+    .svgIcon ul li .icon-caption {
+      font-size: 0.85em;
+      color: #000; }
+  .svgIcon ul li:last-child {
+    border: none; }
+
+/*Section nichols-about */
+.nichols-about {
+  background-color: #E5F0DD;
+  margin: 50px 0;
+  padding: 50px 0; }
+  .nichols-about h3 {
+    color: #25408f;
+    font-size: 3.375rem;
+    font-weight: 500; }
+  .nichols-about p {
+    padding: .675em;
+    width: 65%;
+    margin: 0 auto;
+    font-size: 31px;
+    font-weight: 400; }
+  .nichols-about .btn {
+    border: 1px solid #000000;
+    padding: 10px 20px;
+    border-radius: 0;
+    margin-top: 15px; }
+    .nichols-about .btn a {
+      color: #000;
+      font-weight: 600;
+      letter-spacing: 0.2em; }
+
+/*Section Card-group */
+.cards {
+  margin-bottom: 50px;
+  margin-top: 50px; }
+  .cards .card {
+    box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.3), 2px 4px 3px rgba(0, 0, 0, 0.3); }
+    .cards .card a {
+      color: #000000; }
+    .cards .card:hover {
+      box-shadow: none; }
 
 /*Section Carousel-Video */
 .carousel-Video .slider .carousel .d-block {
@@ -201,8 +193,6 @@ a:hover {
   border: 0;
   border-right: 1px solid rgba(0, 0, 0, 0.125);
   height: 500px; }
-  .carousel-happening .carousel .card .card-text {
-    font-weight: bold; }
   .carousel-happening .carousel .card .card-title {
     font-weight: 400;
     padding-top: 0; }
@@ -218,10 +208,12 @@ a:hover {
 .socialMedia {
   background-color: #353839;
   font-size: 45px; }
-  .socialMedia ul li {
-    margin-left: 15px; }
-    .socialMedia ul li a {
-      color: #747679; }
+  .socialMedia ul {
+    margin: 0; }
+    .socialMedia ul li {
+      margin-left: 15px; }
+      .socialMedia ul li a {
+        color: #747679; }
 
 /* Footer */
 footer {
@@ -229,13 +221,73 @@ footer {
   footer .overlay {
     background-image: url("../images/nicholsMap.png");
     background-repeat: no-repeat;
-    display: flex;
     background-position: 48% 7%;
     background-size: 350px;
-    padding-bottom: 3.75em; }
-  footer .left ul:first-child {
-    margin-right: 90px; }
+    padding-bottom: 3.75em;
+    padding-top: 35px; }
+  footer .left {
+    width: 100%; }
+    footer .left ul:first-child {
+      margin-right: 50px; }
+    footer .left ul li {
+      padding-bottom: .625em; }
   footer .right {
-    margin-left: 54%; }
+    font-family: 'Roboto Slab', serif;
+    font-size: 20px; }
+
+/* Responsive */
+@media (max-width: 767px) {
+  /* Mobile & Tablet Rules */
+  /* Start Header */
+  .main-header .navbar .navbar-brand .icon,
+  .main-header .navbar .navbar-brand p,
+  .main-header .navbar .navbar-collapse .navbar-nav,
+  .main-header .navbar .navbar-collapse form,
+  .head #myVideo {
+    display: none; }
+
+  .main-header .navbar .navbar-brand h1 {
+    font-size: 25px; }
+  .main-header .navbar .navbar-collapse {
+    flex-basis: auto;
+    flex-grow: 0; }
+    .main-header .navbar .navbar-collapse .menu-h {
+      font-size: 23px; }
+      .main-header .navbar .navbar-collapse .menu-h:hover {
+        padding: 0; }
+
+  .head .title h2 {
+    margin-top: 150px;
+    font-size: 2.8em; } }
+@media (min-width: 768px) and (max-width: 991px) {
+  /* Small Screen Rules */
+  .main-header .navbar .navbar-brand .icon,
+  .main-header .navbar .navbar-brand p,
+  .main-header .navbar .navbar-collapse form,
+  .head #myVideo {
+    display: none; }
+
+  .main-header .navbar .navbar-brand h1 {
+    font-size: 25px; }
+  .main-header .navbar .navbar-collapse {
+    flex-basis: auto;
+    flex-grow: 0; }
+    .main-header .navbar .navbar-collapse .navbar-nav {
+      flex-direction: row;
+      float: left; }
+    .main-header .navbar .navbar-collapse .menu-h {
+      font-size: 23px; }
+      .main-header .navbar .navbar-collapse .menu-h:hover {
+        padding: 0; }
+
+  .head .title h2 {
+    margin-top: 100px; } }
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* Medium Screen Rules */
+  .main-header .navbar .navbar-collapse form {
+    display: none; }
+
+  .head .title h2 {
+    margin-top: 100px; } }
 
 /*# sourceMappingURL=style.css.map */

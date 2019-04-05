@@ -25,170 +25,12 @@ a:hover {
 /* End body */
 
 /* FrameWorks */
-.main-header .navbar .navbar-brand, .main-header .navbar .navbar-nav li .btn-header, .main-header .navbar .menu-h, .head .title, footer a, footer a:hover {
+.main-header .navbar .navbar-brand, .main-header .navbar .navbar-nav li .btn-header, .main-header .navbar .menu-h, .head .title, footer a, footer a:hover, footer .right {
     color: #FFF;
 }
 
-/* Start Header */
-.main-header {
+.main-header, .carousels .indicators .dots li, .carousels .indicators .dots li:hover, .carousels .indicators .dots li:active {
     background-color: #000;
-    position: absolute;
-    min-width: 100%;
-    height: 100px;
-    z-index: 999;
-
-    .navbar {
-        .navbar-brand {
-            font-family: 'Roboto Slab', serif;
-
-            .icon {
-                position: relative;
-                width: 70px;
-                height: 80px;
-                left: -20px;
-            }
-
-            p {margin-top: -15px;}
-        }
-
-        .navbar-nav {
-            li {
-                margin-right: 1.25em;
-
-                .btn-header {
-                    border-radius: 0;
-                    background-color: #d15414;
-                    font-weight: bold;
-                    font-size: 20px;
-                    padding: 5px 20px;
-                    &:hover {background-color: #747679;}
-                }
-            }
-        }
-
-        form {
-            .input {
-                border-radius: 0;
-                background-color: #DDD;
-                padding: 20px 10px;
-            }
-        }
-
-        .menu-h {
-            font-size: 23px;
-            &:hover {
-                background-color: #747679;
-                padding: .375rem .75rem;
-            }
-        }
-    }
-}
-
-.head {
-    height: 550px;
-    overflow: hidden;
-
-    #myVideo {
-        right: 0;
-        bottom: 0;
-        min-width: 100%;
-        min-height: 100%;
-        position: relative;
-        z-index: -1;
-    }
-
-    .title {
-        position: absolute;
-        top: 0;
-        text-align: center;
-        min-width: 100%;
-        padding-top: 19%;
-
-        h2 {
-            font-weight: 600;
-            line-height: 1em;
-            font-size: 4.00em;
-            letter-spacing: 0.10em;
-            text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
-        }
-    }
-}
-
-.svgIcon {
-    margin: 50px auto;
-    ul {
-        li {
-            border-right: 2px solid #F5F5F5;
-            width: 20%;
-            text-align: center;
-
-            .icon-svg {
-                background-color: #f5f5f5;
-                width: 100px;
-                height: 100px;
-                border-radius: 50px;
-                margin: 0 auto;
-                margin-bottom: 1.5em;
-
-                .icon {
-                    width: 50%;
-                    height: 90%;
-                    margin: 0 auto;
-
-                }
-            }
-            .icon-caption {font-size: 0.85em;color: #000;}
-        }
-        li:last-child {border: none;}
-    }
-}
-/*Section nichols-about */
-.nichols-about {
-    background-color: #E5F0DD;
-    margin: 50px 0;
-    text-align: center;
-    padding: 50px 0;
-
-    h3 {
-        color: #25408f;
-        font-size: 3.375rem;
-        font-weight: 500;
-    }
-
-    p {
-        padding: .675em;
-        width: 65%;
-        margin: 0 auto;
-        font-size: 31px;
-        font-weight: 400;
-    }
-
-    .btn {
-        border: 1px solid #000000;
-        padding: 10px 20px;
-        border-radius: 0;
-        margin-top: 15px;
-
-        a {
-            color: #000;
-            font-weight: bold;
-            font-weight: 600;
-            letter-spacing: 0.2em;
-        }
-    }
-}
-
-/*Section Card-group */
-.cards {
-    margin-bottom: 50px;
-    margin-top: 50px;
-
-    .card {
-        box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.3), 2px 4px 3px rgba(0, 0, 0, 0.3);
-        a {color: #000000;}
-
-        &:hover {box-shadow: none;}
-    }
 }
 
 /* Carousel */
@@ -224,25 +66,173 @@ a:hover {
 
     .indicators {
         .dots {
-            list-style: none;
             display: flex;
             justify-content: center;
             margin-top: 25px;
             cursor: pointer;
 
             li {
-                background-color: black;
                 width: 10px;
                 height: 10px;
                 display: inline-block;
                 border-radius: 100%;
                 margin-left: 15px;
                 background-color: #d1d1d1;
-
-                &:active,
-                &:hover {background-color: black;}
             }
         }
+    }
+}
+
+/* Start Header */
+.main-header {
+    min-width: 100%;
+    height: auto;
+    z-index: 999;
+
+    .navbar {
+        .navbar-brand {
+            font-family: 'Roboto Slab', serif;
+
+            .icon {
+                width: 70px;
+                height: 80px;
+                left: -20px;
+            }
+
+            p {margin-top: -15px;visibility: hidden;}
+        }
+
+        .navbar-nav {
+            li {
+                margin-right: 1.25em;
+
+                .btn-header {
+                    border-radius: 0;
+                    background-color: #d15414;
+                    font-size: 20px;
+                    padding: 5px 20px;
+                    &:hover {background-color: #747679;}
+                }
+            }
+        }
+
+        form {
+            .input {
+                border-radius: 0;
+                background-color: #DDD;
+                padding: 20px 10px;
+            }
+        }
+
+        .menu-h {
+            font-size: 40px;
+            &:hover {
+                background-color: #747679;
+                padding: .375rem .75rem;
+            }
+        }
+    }
+}
+
+.head {
+    height: 550px;
+    background-image: url("../images/HomePage-1450x645-min.jpg");
+    background-repeat: no-repeat;
+    background-position: 48% 7%;
+    #myVideo {
+        right: 0;
+        bottom: 0;
+        min-width: 100%;
+        min-height: 100%;
+        z-index: -1;
+    }
+
+    .title {
+        top: 0;
+        min-width: 100%;
+        padding-top: 19%;
+
+        h2 {
+            font-weight: 600;
+            line-height: 1em;
+            font-size: 4.00em;
+            letter-spacing: 0.10em;
+            text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
+        }
+    }
+}
+
+.svgIcon {
+    margin: 50px auto;
+    ul {
+        li {
+            border-right: 2px solid #F5F5F5;
+            width: 20%;
+
+            .icon-svg {
+                background-color: #f5f5f5;
+                width: 100px;
+                height: 100px;
+                border-radius: 50px;
+                margin: 0 auto;
+                margin-bottom: 1.5em;
+
+                .icon {
+                    width: 50%;
+                    height: 90%;
+                    margin: 0 auto;
+
+                }
+            }
+            .icon-caption {font-size: 0.85em;color: #000;}
+        }
+        li:last-child {border: none;}
+    }
+}
+/*Section nichols-about */
+.nichols-about {
+    background-color: #E5F0DD;
+    margin: 50px 0;
+    padding: 50px 0;
+
+    h3 {
+        color: #25408f;
+        font-size: 3.375rem;
+        font-weight: 500;
+    }
+
+    p {
+        padding: .675em;
+        width: 65%;
+        margin: 0 auto;
+        font-size: 31px;
+        font-weight: 400;
+    }
+
+    .btn {
+        border: 1px solid #000000;
+        padding: 10px 20px;
+        border-radius: 0;
+        margin-top: 15px;
+
+        a {
+            color: #000;
+            font-weight: 600;
+            letter-spacing: 0.2em;
+        }
+    }
+}
+
+/*Section Card-group */
+.cards {
+    margin-bottom: 50px;
+    margin-top: 50px;
+
+    .card {
+        box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.3), 2px 4px 3px rgba(0, 0, 0, 0.3);
+        a {color: #000000;}
+
+        &:hover {box-shadow: none;}
     }
 }
 
@@ -273,8 +263,6 @@ a:hover {
             border-right: 1px solid rgba(0, 0, 0, .125);
             height: 500px;
 
-            .card-text {font-weight: bold;}
-
             .card-title {font-weight: 400;padding-top: 0;}
         }
         .card:nth-child(4) {border-right: 0;}
@@ -289,6 +277,7 @@ a:hover {
     background-color: #353839;
     font-size: 45px;
     ul {
+        margin: 0;
         li {
             margin-left: 15px;
             a {color: #747679;}
@@ -302,13 +291,112 @@ footer {
     .overlay {
         background-image: url("../images/nicholsMap.png");
         background-repeat: no-repeat;
-        display: flex;
         background-position: 48% 7%;
         background-size: 350px;
         padding-bottom: 3.75em;
+        padding-top: 35px;
     }
     .left {
-        ul:first-child {margin-right: 90px;}
+        width: 100%;
+        ul:first-child {margin-right: 50px;}
+        ul {
+            li {padding-bottom: .625em;}
+        }
     }
-    .right {margin-left: 54%;}
+    .right {
+        font-family: 'Roboto Slab', serif;
+        font-size: 20px;
+    }
+}
+
+/* Responsive */
+@media (max-width: 767px) { /* Mobile & Tablet Rules */
+    /* Start Header */
+    .main-header .navbar .navbar-brand .icon,
+    .main-header .navbar .navbar-brand p,
+    .main-header .navbar .navbar-collapse .navbar-nav,
+    .main-header .navbar .navbar-collapse form,
+    .head #myVideo
+    {
+        display: none;
+    }
+    .main-header {
+        .navbar {
+            .navbar-brand {
+                h1 {
+                    font-size: 25px;
+                }
+            }
+            .navbar-collapse {
+                flex-basis: auto;
+                flex-grow: 0;
+                .menu-h {
+                    font-size: 23px;
+                    &:hover {
+                        padding: 0;
+                    }
+                }
+            }
+        }
+    }
+    .head {
+        .title {
+            h2{
+                margin-top: 150px;
+                font-size: 2.8em;
+            }
+        }
+    }
+}
+@media (min-width: 768px) and (max-width: 991px) { /* Small Screen Rules */
+    .main-header .navbar .navbar-brand .icon,
+    .main-header .navbar .navbar-brand p,
+    .main-header .navbar .navbar-collapse form,
+    .head #myVideo
+    {
+        display: none;
+    }
+    .main-header {
+        .navbar {
+            .navbar-brand {
+                h1 {
+                    font-size: 25px;
+                }
+            }
+            .navbar-collapse {
+                flex-basis: auto;
+                flex-grow: 0;
+                .navbar-nav {
+                    flex-direction: row;
+                    float: left;
+                }
+                .menu-h {
+                    font-size: 23px;
+                    &:hover {
+                        padding: 0;
+                    }
+                }
+            }
+        }
+    }
+    .head {
+        .title {
+            h2{
+                margin-top: 100px;
+            }
+        }
+    }
+}
+@media (min-width: 992px) and (max-width: 1199px) { /* Medium Screen Rules */
+    .main-header .navbar .navbar-collapse form
+    {
+        display: none;
+    }
+    .head {
+        .title {
+            h2{
+                margin-top: 100px;
+            }
+        }
+    }
 }
