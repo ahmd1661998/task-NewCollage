@@ -88,24 +88,19 @@ a:hover {
     min-width: 100%;
     height: auto;
     z-index: 999;
-
     .navbar {
         .navbar-brand {
             font-family: 'Roboto Slab', serif;
-
             .icon {
                 width: 70px;
                 height: 80px;
                 left: -20px;
             }
-
             p {margin-top: -15px;visibility: hidden;}
         }
-
         .navbar-nav {
             li {
                 margin-right: 1.25em;
-
                 .btn-header {
                     border-radius: 0;
                     background-color: #d15414;
@@ -115,7 +110,6 @@ a:hover {
                 }
             }
         }
-
         form {
             .input {
                 border-radius: 0;
@@ -123,7 +117,6 @@ a:hover {
                 padding: 20px 10px;
             }
         }
-
         .menu-h {
             font-size: 40px;
             &:hover {
@@ -146,12 +139,10 @@ a:hover {
         min-height: 100%;
         z-index: -1;
     }
-
     .title {
         top: 0;
         min-width: 100%;
         padding-top: 19%;
-
         h2 {
             font-weight: 600;
             line-height: 1em;
@@ -162,13 +153,13 @@ a:hover {
     }
 }
 
+/* Start Section-information */
 .svgIcon {
     margin: 50px auto;
     ul {
         li {
             border-right: 2px solid #F5F5F5;
             width: 20%;
-
             .icon-svg {
                 background-color: #f5f5f5;
                 width: 100px;
@@ -176,12 +167,10 @@ a:hover {
                 border-radius: 50px;
                 margin: 0 auto;
                 margin-bottom: 1.5em;
-
                 .icon {
                     width: 50%;
                     height: 90%;
                     margin: 0 auto;
-
                 }
             }
             .icon-caption {font-size: 0.85em;color: #000;}
@@ -311,7 +300,6 @@ footer {
 
 /* Responsive */
 @media (max-width: 767px) { /* Mobile & Tablet Rules */
-    /* Start Header */
     .main-header .navbar .navbar-brand .icon,
     .main-header .navbar .navbar-brand p,
     .main-header .navbar .navbar-collapse .navbar-nav,
@@ -320,6 +308,7 @@ footer {
     {
         display: none;
     }
+    /* Start Header */
     .main-header {
         .navbar {
             .navbar-brand {
@@ -347,6 +336,21 @@ footer {
             }
         }
     }
+
+    /* Start Section-information */
+    .svgIcon {
+        margin: 50px auto;
+        ul {
+            display: inline-block !important;
+            li {
+                float: left;
+                border-right: none;
+                width: 50%;
+                margin-bottom: 25px;
+            }
+            li:last-child {width: 100%;}
+        }
+    }
 }
 @media (min-width: 768px) and (max-width: 991px) { /* Small Screen Rules */
     .main-header .navbar .navbar-brand .icon,
@@ -356,6 +360,7 @@ footer {
     {
         display: none;
     }
+    /* Start Header */
     .main-header {
         .navbar {
             .navbar-brand {
@@ -392,6 +397,7 @@ footer {
     {
         display: none;
     }
+    /* Start Header */
     .head {
         .title {
             h2{
