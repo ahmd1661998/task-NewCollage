@@ -236,7 +236,7 @@ footer {
     font-family: 'Roboto Slab', serif;
     font-size: 20px; }
 
-/* Responsive */
+/* ======================== Responsive ======================== */
 @media (max-width: 767px) {
   /* Mobile & Tablet Rules */
   .main-header .navbar .navbar-brand .icon,
@@ -284,13 +284,6 @@ footer {
     .nichols-about p {
       width: 100%;
       font-size: 20px; }
-    .nichols-about .btn {
-      padding: 10px 20px;
-      border-radius: 0;
-      margin-top: 15px; }
-      .nichols-about .btn a {
-        font-weight: 600;
-        letter-spacing: 0.2em; }
 
   /*Section Card-group */
   .cards .card {
@@ -300,7 +293,24 @@ footer {
   .carousel-Video h4 {
     font-size: 1.700rem; }
   .carousel-Video .slider .carousel .d-block {
-    height: 180px; } }
+    height: 180px; }
+
+  /*Carousel-Happening */
+  .carousel-happening h4 {
+    text-align: center; }
+  .carousel-happening .slider {
+    display: none; }
+
+  /* Footer */
+  footer .overlay {
+    background-image: none;
+    padding-bottom: 3.75em;
+    padding-top: 35px; }
+  footer .media {
+    display: inline-block !important; }
+  footer .left {
+    width: 100%;
+    margin-bottom: 20px; } }
 @media (min-width: 768px) and (max-width: 991px) {
   /* Small Screen Rules */
   .main-header .navbar .navbar-brand .icon,

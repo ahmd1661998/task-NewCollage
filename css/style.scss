@@ -294,7 +294,8 @@ footer {
     }
 }
 
-/* Responsive */
+/* ======================== Responsive ======================== */
+
 @media (max-width: 767px) { /* Mobile & Tablet Rules */
     .main-header .navbar .navbar-brand .icon,
     .main-header .navbar .navbar-brand p,
@@ -360,15 +361,6 @@ footer {
             width: 100%;
             font-size: 20px;
         }
-        .btn {
-            padding: 10px 20px;
-            border-radius: 0;
-            margin-top: 15px;
-            a {
-                font-weight: 600;
-                letter-spacing: 0.2em;
-            }
-        }
     }
 
     /*Section Card-group */
@@ -387,6 +379,29 @@ footer {
             .carousel {
                 .d-block {height: 180px;}
             }
+        }
+    }
+    /*Carousel-Happening */
+    .carousel-happening {
+        h4 {text-align: center;}
+
+        .slider {
+            display: none;
+        }
+    }
+    /* Footer */
+    footer {
+        .overlay {
+            background-image: none;
+            padding-bottom: 3.75em;
+            padding-top: 35px;
+        }
+        .media {
+            display: inline-block !important;
+        }
+        .left {
+            width: 100%;
+            margin-bottom: 20px;
         }
     }
 }
