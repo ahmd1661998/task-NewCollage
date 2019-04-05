@@ -243,7 +243,9 @@ footer {
   .main-header .navbar .navbar-brand p,
   .main-header .navbar .navbar-collapse .navbar-nav,
   .main-header .navbar .navbar-collapse form,
-  .head #myVideo {
+  .head #myVideo,
+  .carousel-Video .slider .btnLeft,
+  .carousel-Video .slider .btnRight {
     display: none; }
 
   /* Start Header */
@@ -292,13 +294,21 @@ footer {
 
   /*Section Card-group */
   .cards .card {
-    box-shadow: none; } }
+    box-shadow: none; }
+
+  /*Section Carousel-Video */
+  .carousel-Video h4 {
+    font-size: 1.700rem; }
+  .carousel-Video .slider .carousel .d-block {
+    height: 180px; } }
 @media (min-width: 768px) and (max-width: 991px) {
   /* Small Screen Rules */
   .main-header .navbar .navbar-brand .icon,
   .main-header .navbar .navbar-brand p,
   .main-header .navbar .navbar-collapse form,
-  .head #myVideo {
+  .head #myVideo,
+  .carousel-Video .slider .btnLeft,
+  .carousel-Video .slider .btnRight {
     display: none; }
 
   /* Start Header */
@@ -310,13 +320,13 @@ footer {
     .main-header .navbar .navbar-collapse .navbar-nav {
       flex-direction: row;
       float: left; }
-    .main-header .navbar .navbar-collapse .menu-h {
-      font-size: 23px; }
-      .main-header .navbar .navbar-collapse .menu-h:hover {
-        padding: 0; }
 
   .head .title h2 {
-    margin-top: 100px; } }
+    margin-top: 100px; }
+
+  /*Section Carousel-Video */
+  .carousel-Video .slider .carousel .d-block {
+    height: 370px; } }
 @media (min-width: 992px) and (max-width: 1199px) {
   /* Medium Screen Rules */
   .main-header .navbar .navbar-collapse form {
@@ -324,6 +334,10 @@ footer {
 
   /* Start Header */
   .head .title h2 {
-    margin-top: 100px; } }
+    margin-top: 100px; }
+
+  /*Section Carousel-Video */
+  .carousel-Video .slider .carousel .d-block {
+    height: 500px; } }
 
 /*# sourceMappingURL=style.css.map */
