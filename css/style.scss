@@ -183,13 +183,11 @@ a:hover {
     background-color: #E5F0DD;
     margin: 50px 0;
     padding: 50px 0;
-
     h3 {
         color: #25408f;
         font-size: 3.375rem;
         font-weight: 500;
     }
-
     p {
         padding: .675em;
         width: 65%;
@@ -197,13 +195,11 @@ a:hover {
         font-size: 31px;
         font-weight: 400;
     }
-
     .btn {
         border: 1px solid #000000;
         padding: 10px 20px;
         border-radius: 0;
         margin-top: 15px;
-
         a {
             color: #000;
             font-weight: 600;
@@ -339,7 +335,6 @@ footer {
 
     /* Start Section-information */
     .svgIcon {
-        margin: 50px auto;
         ul {
             display: inline-block !important;
             li {
@@ -348,7 +343,29 @@ footer {
                 width: 50%;
                 margin-bottom: 25px;
             }
-            li:last-child {width: 100%;}
+            li:last-child {width: 100%;margin-bottom: 0;}
+        }
+    }
+
+    /*Section nichols-about */
+    .nichols-about {
+        margin: 50px 0;
+        padding: 50px 0;
+        h3 {
+            font-size: 1.9rem;
+        }
+        p {
+            width: 100%;
+            font-size: 20px;
+        }
+        .btn {
+            padding: 10px 20px;
+            border-radius: 0;
+            margin-top: 15px;
+            a {
+                font-weight: 600;
+                letter-spacing: 0.2em;
+            }
         }
     }
 }
