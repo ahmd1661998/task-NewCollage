@@ -288,7 +288,11 @@ footer {
       margin-top: 15px; }
       .nichols-about .btn a {
         font-weight: 600;
-        letter-spacing: 0.2em; } }
+        letter-spacing: 0.2em; }
+
+  /*Section Card-group */
+  .cards .card {
+    box-shadow: none; } }
 @media (min-width: 768px) and (max-width: 991px) {
   /* Small Screen Rules */
   .main-header .navbar .navbar-brand .icon,
